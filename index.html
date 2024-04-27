@@ -1,66 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Tales</title>
-    <style>
-        body {
-            background-color: #f5f5dc;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            margin: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+ <title>Time Tales</title>
+ <style>
+ /* Add your CSS styles here */
+ body {
+ background-color: #f5f5dc;
+ font-family: 'Georgia', serif;
+ }
+
+ header {
+ background-color: #696969;
+ color: white;
+ padding: 10px;
+ text-align: center;
+ }
+
+ nav {
+ text-align: center;
+ }
+
+ nav a {
+ color: white;
+ text-decoration: none;
+ padding: 5px;
+ }
+
+ nav a:hover {
+ background-color: #3f3f3f;
+ }
+
+ main {
+ display: flex;
+ flex-wrap: wrap;
+ }
+
+ .story {
+ width: 30%;
+ margin: 1%;
+ background-color: white;
+ padding: 10px;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ .story img {
+ width: 100%;
+ }
+
+ footer {
+ background-color: #696969;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ }
+
+ /* Add media queries for responsiveness */
+ @media (max-width: 768px) {
+ .story {
+ width: 45%;
+ }
+ }
+
+ @media (max-width: 480px) {
+ .story {
+ width: 100%;
+ }
+ }
+ </style>
 </head>
 <body>
-    <header>
-        <h1>Time Tales</h1>
-        <nav>
-            <ul>
-                <li><a href="#historical-fiction">Historical Fiction</a></li>
-                <li><a href="#time-travel">Time Travel</a></li>
-                <li><a href="#historical-mysteries">Historical Mysteries</a></li>
-                <li><a href="#author-interviews">Author Interviews</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Add your content here -->
-    </main>
-    <footer>
-        &copy; 2022 Time Tales. All rights reserved.
-    </footer>
-    <script>
-        // Add your JavaScript here
-    </script>
+ <header>
+ <h1>Time Tales</h1>
+ </header>
+ <nav>
+ <a href="#">Home</a>
+ <a href="#">Historical Fiction Stories</a>
+ <a href="#">Time Travel Adventures</a>
+ <a href="#">Historical Mysteries</a>
+ <a href="#">Author Interviews</a>
+ </nav>
+ <main>
+ <!-- Add your story elements here -->
+ <div class="story">
+ <img src="story1.jpg" alt="Story 1">
+ <h2>Story 1</h2>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus.</p>
+ <a href="#">Read More</a>
+ </div>
+ <!-- Add more story elements here -->
+ </main>
+ <footer>
+ <p>Copyright Time Tales &copy; 2022</p>
+ </footer>
+ <!-- Add your JavaScript code here -->
+ <script>
+ // Add your JavaScript code here
+ </script>
 </body>
 </html>
